@@ -3,13 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['github.com', 'avatars.githubusercontent.com'],
-    unoptimized: true,
+    unoptimized: process.env.VERCEL !== '1',
   },
   env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api',
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'https://dhanraj-portfolio-api.onrender.com/api',
   },
-  // Use standalone for Docker, export for static hosting
-  output: process.env.BUILD_STANDALONE === 'true' ? 'standalone' : 'export',
   trailingSlash: true,
 };
 
