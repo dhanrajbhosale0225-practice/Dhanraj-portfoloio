@@ -1,12 +1,13 @@
-import React from 'react';
-import AboutSection from '../../components/sections/About';
+'use client';
 
-const AboutPage: React.FC = () => {
-    return (
-        <div>
-            <AboutSection />
-        </div>
-    );
+import About from '@/components/sections/About';
+
+const AboutPage = () => {
+  return (
+    <main className="pt-20">
+      <About />
+    </main>
+  );
 };
 
 export default AboutPage;

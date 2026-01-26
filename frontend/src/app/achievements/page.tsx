@@ -1,13 +1,13 @@
-import React from 'react';
-import Achievements from '../../components/sections/Achievements';
+'use client';
 
-const AchievementsPage: React.FC = () => {
-    return (
-        <div>
-            <h1 className="text-3xl font-bold mb-4">Achievements</h1>
-            <Achievements />
-        </div>
-    );
+import Achievements from '@/components/sections/Achievements';
+
+const AchievementsPage = () => {
+  return (
+    <main className="pt-20">
+      <Achievements />
+    </main>
+  );
 };
 
 export default AchievementsPage;
