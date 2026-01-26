@@ -52,8 +52,8 @@ async def submit_contact(
 async def get_contact_info():
     """Get public contact information."""
     return {
-        "email": "contact@yourportfolio.com",
-        "location": "India",
+        "email": "Dhanraj@bhosale.in",
+        "location": "Bangalore, India",
         "availability": "Open to opportunities",
         "response_time": "Usually within 24-48 hours"
     }

@@ -26,64 +26,49 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'AI-Powered Analytics Dashboard',
-      description: 'Real-time analytics platform with ML-driven insights and predictive forecasting.',
-      longDescription: 'Built a comprehensive analytics dashboard that processes millions of data points in real-time.',
-      techStack: ['Python', 'TensorFlow', 'FastAPI', 'React', 'PostgreSQL', 'Docker'],
-      githubUrl: 'https://github.com/yourusername/analytics-dashboard',
+      title: 'TunnelFury-VPN',
+      description: 'A VPN solution focused on security and speed functionality.',
+      longDescription: 'A VPN implementation project demonstrating network security concepts and tunneling protocols.',
+      techStack: ['Python', 'Networking', 'Security'],
+      githubUrl: 'https://github.com/Dhanraj10/TunnelFury-VPN',
       featured: true,
-      category: 'data-science'
+      category: 'security'
     },
     {
       id: 2,
-      title: 'NLP Pipeline for Text Classification',
-      description: 'End-to-end NLP pipeline achieving 94% accuracy on sentiment analysis tasks.',
-      techStack: ['Python', 'PyTorch', 'Hugging Face', 'spaCy', 'FastAPI'],
-      githubUrl: 'https://github.com/yourusername/nlp-pipeline',
+      title: 'DiseasePredictionSystem',
+      description: 'Machine learning system for predicting disease based on symptoms and medical data.',
+      techStack: ['Python', 'Machine Learning', 'Scikit-learn'],
+      githubUrl: 'https://github.com/Dhanraj10/DiseasePredictionSystem',
       featured: true,
       category: 'machine-learning'
     },
     {
       id: 3,
-      title: 'Xethon Hackathon Winner',
-      description: 'Award-winning hackathon project showcasing innovative data-driven solution.',
-      techStack: ['Python', 'Scikit-learn', 'Streamlit', 'Pandas', 'Plotly'],
+      title: 'Facial-Recognition-Attendance-System',
+      description: 'Automated attendance system using facial recognition technology.',
+      techStack: ['Python', 'OpenCV', 'Face Recognition'],
+      githubUrl: 'https://github.com/Dhanraj10/Facial-Recognition-Attendance-System',
       featured: true,
-      category: 'hackathon'
-    },
-    {
-      id: 4,
-      title: 'Automated Data Pipeline',
-      description: 'Scalable ETL pipeline handling terabytes of data daily with 60% processing time reduction.',
-      techStack: ['Python', 'Apache Airflow', 'Spark', 'SQL', 'AWS S3'],
-      githubUrl: 'https://github.com/yourusername/data-pipeline',
-      featured: false,
-      category: 'data-engineering'
-    },
-    {
-      id: 5,
-      title: 'Computer Vision QA System',
-      description: 'Image recognition system achieving 99.2% accuracy in defect detection.',
-      techStack: ['Python', 'OpenCV', 'TensorFlow', 'Keras', 'Docker'],
-      featured: false,
       category: 'computer-vision'
     },
     {
-      id: 6,
-      title: 'Recommendation Engine',
-      description: 'Hybrid recommendation system improving user engagement by 35%.',
-      techStack: ['Python', 'Surprise', 'NumPy', 'FastAPI', 'MongoDB'],
+      id: 4,
+      title: 'Webhooks',
+      description: 'Implementation of webhook handlers for event-driven architecture.',
+      techStack: ['Python'],
+      githubUrl: 'https://github.com/Dhanraj10/Webhooks',
       featured: false,
-      category: 'machine-learning'
+      category: 'backend'
     }
   ];
 
   const categories = [
     { id: 'all', label: 'All Projects' },
-    { id: 'data-science', label: 'Data Science' },
     { id: 'machine-learning', label: 'Machine Learning' },
-    { id: 'data-engineering', label: 'Data Engineering' },
-    { id: 'hackathon', label: 'Hackathon' },
+    { id: 'computer-vision', label: 'Computer Vision' },
+    { id: 'security', label: 'Security' },
+    { id: 'backend', label: 'Backend' },
   ];
 
   const filteredProjects = activeFilter === 'all' 
@@ -92,11 +77,10 @@ const Projects = () => {
 
   const getCategoryColor = (category: string) => {
     const colors: Record<string, string> = {
-      'data-science': 'from-blue-500 to-cyan-500',
       'machine-learning': 'from-purple-500 to-pink-500',
-      'data-engineering': 'from-green-500 to-emerald-500',
       'computer-vision': 'from-orange-500 to-red-500',
-      'hackathon': 'from-yellow-500 to-orange-500',
+      'security': 'from-green-500 to-emerald-500',
+      'backend': 'from-blue-500 to-cyan-500',
     };
     return colors[category] || 'from-primary-500 to-secondary-500';
   };
@@ -227,12 +211,12 @@ const Projects = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Dhanraj10"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-secondary inline-flex"
+            className="btn-secondary inline-flex group"
           >
-            <Github className="mr-2 h-4 w-4" />
+            <Github className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
             View More on GitHub
           </a>
         </motion.div>

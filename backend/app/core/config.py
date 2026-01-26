@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     SMTP_USER: str = os.getenv("SMTP_USER", "")
     SMTP_PASSWORD: str = os.getenv("SMTP_PASSWORD", "")
     EMAIL_FROM: str = os.getenv("EMAIL_FROM", "noreply@portfolio.com")
-    EMAIL_TO: str = os.getenv("EMAIL_TO", "your.email@gmail.com")
+    EMAIL_TO: str = os.getenv("EMAIL_TO", "Dhanraj@bhosale.in")
     
     class Config:
         env_file = ".env"

@@ -41,24 +41,32 @@ const Contact = () => {
     setErrorMessage('');
 
     try {
-      // For demo purposes, simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      // Try sending via backend API first
+      const response = await fetch('http://localhost:8000/api/contact/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
       
-      // In production, you would call your backend API:
-      // const response = await fetch('http://localhost:8000/api/contact/', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData)
-      // });
-      
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        // If backend fails, open mailto link as fallback
+        const mailtoLink = `mailto:Dhanraj@bhosale.in?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\n${formData.message}`)}`;
+        window.open(mailtoLink, '_blank');
+        setStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setStatus('idle'), 5000);
+      }
+    } catch (error) {
+      // If API is not available, use mailto as fallback
+      const mailtoLink = `mailto:Dhanraj@bhosale.in?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\n${formData.message}`)}`;
+      window.open(mailtoLink, '_blank');
       setStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
-      
-      // Reset success message after 5 seconds
       setTimeout(() => setStatus('idle'), 5000);
-    } catch (error) {
-      setStatus('error');
-      setErrorMessage('Failed to send message. Please try again.');
     }
   };
 

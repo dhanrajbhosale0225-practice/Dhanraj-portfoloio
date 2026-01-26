@@ -154,13 +154,7 @@ const Achievements = () => {
           transition={{ duration: 0.6, delay: 1 }}
           className="text-center mt-16"
         >
-          <p className="text-slate-600 dark:text-slate-400 mb-4">
-            Interested in what I can bring to your team?
-          </p>
-          <a href="#contact" className="btn-primary inline-flex">
-            <Target className="mr-2 h-4 w-4" />
-            Let&apos;s Connect
-          </a>
+          
         </motion.div>
       </div>
     </section>
