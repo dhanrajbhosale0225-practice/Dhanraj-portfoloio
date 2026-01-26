@@ -16,6 +16,7 @@ const Navbar = () => {
     { href: '#experience', label: 'Experience' },
     { href: '#projects', label: 'Projects' },
     { href: '#achievements', label: 'Achievements' },
+    { href: '#performance', label: 'Performance' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -45,7 +46,7 @@ const Navbar = () => {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center group-hover:scale-110 transition-transform">
               <Code2 className="h-5 w-5 text-white" />
             </div>
-            <span className="text-xl font-bold gradient-text hidden sm:block">DJ</span>
+            <span className="text-xl font-bold gradient-text hidden sm:block">Dhanraj Bhosale</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -199,7 +199,7 @@ const Projects = () => {
                       className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                     >
                       <Github className="h-4 w-4" />
-                      Code
+                      {project.githubUrl}
                     </a>
                   )}
                   {project.liveUrl && (

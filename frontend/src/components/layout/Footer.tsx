@@ -8,10 +8,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/yourusername', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com/yourusername', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:your.email@gmail.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/Dhanraj10', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/dhanraj-bhosale-89320b1ba/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:Dhanraj@bhosale.in', label: 'Email' },
   ];
 
   const quickLinks = [
@@ -38,7 +37,7 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center">
                 <Code2 className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold gradient-text">DJ</span>
+              <span className="text-xl font-bold gradient-text">Dhanraj Bhosale</span>
             </Link>
             <p className="text-slate-600 dark:text-slate-400 mb-4 max-w-xs">
               Data Scientist & Software Engineer passionate about building intelligent solutions.

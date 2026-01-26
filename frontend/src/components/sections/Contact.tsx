@@ -63,14 +63,13 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/yourusername', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com/yourusername', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/Dhanraj10', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/dhanraj-bhosale-89320b1ba/', label: 'LinkedIn' },
   ];
 
   const contactInfo = [
-    { icon: Mail, label: 'Email', value: 'your.email@gmail.com', href: 'mailto:your.email@gmail.com' },
-    { icon: MapPin, label: 'Location', value: 'India', href: null },
+    { icon: Mail, label: 'Email', value: 'Dhanraj@bhosale.in', href: 'mailto:Dhanraj@bhosale.in' },
+    { icon: MapPin, label: 'Location', value: 'Bangalore, India', href: null },
   ];
 
   return (

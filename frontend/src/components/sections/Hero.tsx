@@ -58,7 +58,7 @@ const Hero = () => {
             className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
           >
             Hi, I&apos;m{' '}
-            <span className="gradient-text">DJ</span>
+            <span className="gradient-text">Dhanraj Bhosale</span>
           </motion.h1>
 
           {/* Role */}
@@ -108,7 +108,7 @@ const Hero = () => {
             className="flex gap-4 justify-center"
           >
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Dhanraj10"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all duration-300 hover:scale-110 hover:shadow-lg"
@@ -117,7 +117,7 @@ const Hero = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/dhanraj-bhosale-89320b1ba/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all duration-300 hover:scale-110 hover:shadow-lg"
@@ -126,7 +126,7 @@ const Hero = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="mailto:your.email@gmail.com"
+              href="mailto:Dhanraj@bhosale.in"
               className="p-3 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all duration-300 hover:scale-110 hover:shadow-lg"
               aria-label="Email"
             >

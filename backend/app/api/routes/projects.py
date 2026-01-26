@@ -8,58 +8,43 @@ router = APIRouter()
 PROJECTS: List[Project] = [
     Project(
         id=1,
-        title="AI-Powered Analytics Dashboard",
-        description="Real-time analytics platform with ML-driven insights and predictive forecasting.",
-        long_description="Built a comprehensive analytics dashboard that processes millions of data points in real-time. Implemented machine learning models for predictive analytics, anomaly detection, and trend forecasting. The platform reduced decision-making time by 40% for stakeholders.",
-        tech_stack=["Python", "TensorFlow", "FastAPI", "React", "PostgreSQL", "Redis", "Docker"],
-        github_url="https://github.com/yourusername/analytics-dashboard",
+        title="TunnelFury-VPN",
+        description="A VPN solution focused on security and speed functionality.",
+        long_description="A VPN implementation project demonstrating network security concepts and tunneling protocols.",
+        tech_stack=["Python", "Networking", "Security"],
+        github_url="https://github.com/Dhanraj10/TunnelFury-VPN",
         featured=True,
-        category="data-science"
+        category="security"
     ),
     Project(
         id=2,
-        title="Natural Language Processing Pipeline",
-        description="End-to-end NLP pipeline for sentiment analysis and text classification.",
-        long_description="Developed a scalable NLP pipeline capable of processing and classifying text data at scale. Implemented transformer-based models achieving 94% accuracy on sentiment analysis tasks.",
-        tech_stack=["Python", "PyTorch", "Hugging Face", "spaCy", "FastAPI", "AWS"],
-        github_url="https://github.com/yourusername/nlp-pipeline",
+        title="DiseasePredictionSystem",
+        description="Machine learning system for predicting disease based on symptoms and medical data.",
+        long_description="Developed a scalable disease prediction system using advanced machine learning algorithms.",
+        tech_stack=["Python", "Machine Learning", "Scikit-learn"],
+        github_url="https://github.com/Dhanraj10/DiseasePredictionSystem",
         featured=True,
         category="machine-learning"
     ),
     Project(
         id=3,
-        title="Xethon Hackathon Winner Project",
-        description="Award-winning hackathon project showcasing innovative data-driven solution.",
-        long_description="First place winner at Xethon Hackathon. Built an innovative solution that addressed real-world challenges using cutting-edge technologies and data science methodologies.",
-        tech_stack=["Python", "Scikit-learn", "Streamlit", "Pandas", "Plotly"],
+        title="Facial-Recognition-Attendance-System",
+        description="Automated attendance system using facial recognition technology.",
+        long_description="Built a contactless attendance system that uses facial recognition for accurate and quick verification.",
+        tech_stack=["Python", "OpenCV", "Face Recognition"],
+        github_url="https://github.com/Dhanraj10/Facial-Recognition-Attendance-System",
         featured=True,
-        category="hackathon"
-    ),
-    Project(
-        id=4,
-        title="Automated Data Pipeline",
-        description="Scalable ETL pipeline for processing and transforming large datasets.",
-        long_description="Designed and implemented automated data pipelines handling terabytes of data daily. Reduced data processing time by 60% and improved data quality metrics.",
-        tech_stack=["Python", "Apache Airflow", "Spark", "SQL", "AWS S3", "Redshift"],
-        github_url="https://github.com/yourusername/data-pipeline",
-        category="data-engineering"
-    ),
-    Project(
-        id=5,
-        title="Computer Vision Application",
-        description="Image recognition system for automated quality inspection.",
-        long_description="Built a computer vision system for automated quality inspection in manufacturing. Achieved 99.2% accuracy in defect detection, reducing manual inspection costs by 70%.",
-        tech_stack=["Python", "OpenCV", "TensorFlow", "Keras", "Docker", "FastAPI"],
         category="computer-vision"
     ),
     Project(
-        id=6,
-        title="Recommendation Engine",
-        description="Personalized recommendation system using collaborative filtering.",
-        long_description="Developed a hybrid recommendation engine combining collaborative filtering and content-based approaches. Improved user engagement by 35% through personalized suggestions.",
-        tech_stack=["Python", "Surprise", "NumPy", "FastAPI", "MongoDB"],
-        category="machine-learning"
-    )
+        id=4,
+        title="Webhooks",
+        description="Implementation of webhook handlers for event-driven architecture.",
+        long_description="A project demonstrating the use and handling of webhooks for integrating different services.",
+        tech_stack=["Python"],
+        github_url="https://github.com/Dhanraj10/Webhooks",
+        category="backend"
+    ),
 ]
 
 ACHIEVEMENTS: List[Achievement] = [
