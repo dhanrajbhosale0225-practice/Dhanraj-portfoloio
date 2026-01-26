@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Quote, Star, User, ThumbsUp, Activity } from 'lucide-react';
+import { Quote, Star, User, ThumbsUp, Activity, Target } from 'lucide-react';
 import FadeIn from '../animations/FadeIn';
 
 const FEEDBACK = [
@@ -110,6 +110,27 @@ const Performance = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="mt-16 text-center"
+        >
+          <div className="bg-primary-50/50 dark:bg-slate-800/50 rounded-3xl p-8 md:p-12 backdrop-blur-sm border border-primary-100 dark:border-slate-700 max-w-3xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-regular text-slate-800 dark:text-slate-100 mb-8 font-serif">
+              Interested in what I can bring to your team?
+            </h3>
+            
+            <a 
+              href="#contact"
+              className="inline-flex items-center gap-3 px-8 py-3 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 text-slate-900 font-bold text-lg shadow-lg shadow-orange-500/20 hover:shadow-orange-500/30 hover:scale-105 transition-all duration-300"
+            >
+              <Target className="h-6 w-6 stroke-2" />
+              Let&apos;s Connect
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
