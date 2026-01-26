@@ -7,22 +7,24 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
-    volumes:
-      - ./backend:/app
+    env_file:
+      - ./backend/.env
     environment:
-      - ENV=development
+      - ENV=production
+    restart: unless-stopped
 
   frontend:
     build:
       context: ./frontend
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    volumes:
-      - ./frontend:/app
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=http://localhost:8000/api
     depends_on:
       - backend
+    restart: unless-stopped
 
 networks:
   default:
