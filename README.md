@@ -7,6 +7,21 @@ A modern, full-stack portfolio website built with **Next.js 14** (TypeScript) fo
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-06B6D4?style=flat-square&logo=tailwindcss)
 
+## 📚 Documentation
+
+### Getting Started
+- **[Quick Start Guide](QUICKSTART.md)** - Get up and running in 5 minutes! ⚡
+
+### Comprehensive Guides
+- **[Architecture Guide](ARCHITECTURE.md)** - System design, component architecture, design patterns, and scalability strategies
+- **[API Documentation](API_DOCUMENTATION.md)** - Complete API reference with examples
+- **[Deployment Guide](DEPLOYMENT.md)** - Production deployment and CI/CD setup
+- **[Security Best Practices](SECURITY.md)** - Security architecture and guidelines
+- **[Data Science Architecture](DATA_SCIENCE_ARCHITECTURE.md)** - Analytics, ML integration, and insights
+- **[Contributing Guide](CONTRIBUTING.md)** - Development workflow and code standards
+- **[Architecture Diagrams](DIAGRAMS.md)** - Visual system architecture diagrams
+- **[TDD Template](TECHNICAL_DESIGN_TEMPLATE.md)** - Template for technical design documents
+
 ## 🚀 Features
 
 - ⚡ **Modern Tech Stack**: Next.js 14, TypeScript, Tailwind CSS, FastAPI
@@ -145,10 +160,44 @@ NEXT_PUBLIC_API_URL=https://your-backend-url.com/api
 - 💼 **Experience**: 2+ years at Navikenz as Software Engineer (Data Scientist)
 - 📜 **Internship**: PwC (Big Four) Data Analytics Intern
 
+## 🏗️ Architecture Highlights
+
+This project demonstrates professional software architecture principles:
+
+### **Technical Architecture**
+- **Clean Architecture**: Separation of concerns with layered design (Presentation, API, Business Logic, Services)
+- **API-First Design**: RESTful API with OpenAPI documentation
+- **Type Safety**: TypeScript frontend + Pydantic backend for compile-time and runtime validation
+- **Microservices Ready**: Containerized services with Docker Compose
+
+### **Design Thinking**
+- **User-Centric Design**: Mobile-first responsive design with accessibility in mind
+- **Progressive Enhancement**: Works without JavaScript, enhanced with it
+- **Performance-First**: Static Site Generation (SSG), code splitting, and optimized assets
+
+### **Data Science Integration**
+- **Analytics-Ready**: Architecture supports user behavior tracking and insights
+- **ML-Friendly**: Designed for recommendation engines and predictive analytics
+- **Data Pipeline**: ETL pipeline design for analytics and reporting
+
+### **DevOps & Scalability**
+- **CI/CD Ready**: GitHub Actions workflow for automated testing and deployment
+- **Horizontal Scaling**: Stateless API design enables easy scaling
+- **Observability**: Structured logging and monitoring hooks
+- **Security-First**: Defense-in-depth strategy with multiple security layers
+
+### **Best Practices**
+- **SOLID Principles**: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion
+- **DRY (Don't Repeat Yourself)**: Reusable components and utilities
+- **KISS (Keep It Simple)**: Simple, maintainable code over clever complexity
+- **YAGNI (You Aren't Gonna Need It)**: Features implemented when needed, not speculated
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) for complete architectural details.
+
 ## 📄 License
 
 MIT License - feel free to use this template for your own portfolio!
 
 ---
 
-Built with ❤️ using Next.js & FastAPI
+Built with ❤️ using Next.js & FastAPI | Architected with 🧠 Data Science & Design Thinking Principles
