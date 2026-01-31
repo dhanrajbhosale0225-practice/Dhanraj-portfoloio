@@ -9,12 +9,18 @@ A modern, full-stack portfolio website built with **Next.js 14** (TypeScript) fo
 
 ## 📚 Documentation
 
+### Getting Started
+- **[Quick Start Guide](QUICKSTART.md)** - Get up and running in 5 minutes! ⚡
+
+### Comprehensive Guides
 - **[Architecture Guide](ARCHITECTURE.md)** - System design, component architecture, design patterns, and scalability strategies
 - **[API Documentation](API_DOCUMENTATION.md)** - Complete API reference with examples
 - **[Deployment Guide](DEPLOYMENT.md)** - Production deployment and CI/CD setup
 - **[Security Best Practices](SECURITY.md)** - Security architecture and guidelines
 - **[Data Science Architecture](DATA_SCIENCE_ARCHITECTURE.md)** - Analytics, ML integration, and insights
 - **[Contributing Guide](CONTRIBUTING.md)** - Development workflow and code standards
+- **[Architecture Diagrams](DIAGRAMS.md)** - Visual system architecture diagrams
+- **[TDD Template](TECHNICAL_DESIGN_TEMPLATE.md)** - Template for technical design documents
 
 ## 🚀 Features
 
